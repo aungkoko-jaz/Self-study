@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@100&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+p{
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+}
+p.learnmore{
+	
+}
+h1.title{
+	margin-bottom: 20px;
+	color: #444444;
+	font-family: cursive;
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
+.main_container{
+	position: relative;
+}
+/*-------Navigation bar--------*/
+.navbar{
+	width: 100%;
+	height: 65px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	background: #000;
+}
+.logo a{
+	font-family: cursive;
+	font-size: 32px;
+	color: #fb2274;
+}
+.navbar .navbar_items ul{
+	display: flex;
+}
+.navbar .navbar_items ul li{
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+.navbar .navbar_items ul li a{
+	color: #fff;
+}
+.navbar .navbar_items ul li a:hover{
+	color: #00bf5f;
+}
+
+/*------banner-image-------*/
+.banner_image{
+	background: url("images/aurora.jpg") no-repeat center;
+	background-origin: cover;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner_content{
+	transform: translateY(-50px);
+}
+.banner_content h1 span{
+	color: #ff0000;
+}
+/*---------about us----------*/
+.about,
+.services,
+.contactus,
+.ourteam{
+	padding: 5% 10%;
+	text-align: center;
+}
+.btn a{
+	display: block;
+	width: 160px;
+	height: 35px;
+	line-height: 35px;
+	border: 2px solid #fb2274;
+	margin: 25px auto;
+	text-align: center;
+}
+/*-----------service section----------*/
+.services{
+	background: #f5f5f5;
+}
+.diff_services{
+	display: flex;
+	margin-top: 35px;
+	justify-content: space-between;
+}
+.diff_service_item{
+	width: 30%;
+}
+.diff_service_item img{
+	width: 100%;
+	margin-bottom: 25px;
+}
+.diff_service_item h3{
+	color: #fb2274;
+}
+/*------------contact section*/
+.form_input{
+	margin-bottom: 15px;
+}
+.form_input input[type="text"]{
+	width: 250px;
+	padding: 12px 20px;
+}
+.form_input textarea{
+	width: 250px;
+	padding: 12px 20px;
+	height: 80px;
+	resize: none;
+	border: 1px solid #ccc;
+}
+/*------------Our team section------*/
+.ourteam{
+	background: #f5f5f5;
+}
+.ourteam_wrapper .team{
+	display: flex;
+	justify-content: space-between;
+}
+.ourteam_wrapper .team-1.team{
+	margin-bottom: 25px;
+}
+.ourteam_wrapper .team_member{
+	width: 20%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden; /***/
+}
+.ourteam_wrapper .team_member img{
+	width: 100%;
+	display: block;
+	height: auto;
+	transition: all 0.5s ease; /***/
+}
+.ourteam_wrapper .team_member:hover img{
+	transform: scale(1.1); /***/
+}
+/*------footer section-----*/
+.footer{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #444444;
+	padding: 20px auto;
+}
+.footer a{
+	color: #fff;
+}
