@@ -1,0 +1,554 @@
+/*----------------
+  Header Area
+----------------*/
+
+.header-area {
+    background: none repeat scroll 0 0 #f4f4f4;
+}
+.header-area a {
+    color: #888;
+}
+.user-menu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.user-menu li {
+    display: inline-block;
+}
+.user-menu li a {
+    display: block;
+    font-size: 13px;
+    margin-right: 5px;
+    padding: 10px;
+}
+.user-menu li a i.fa {
+    margin-right: 5px;
+}
+
+.user-menu li a:hover {
+    color: #009999;
+}
+
+
+
+/*---------------------
+  Site Branding Area
+----------------------*/
+
+.logo h1 {
+    font-size: 40px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+.logo h1 a {
+    color: #999;
+}
+.logo h1 a:hover {text-decoration: none;opacity: .7}
+
+.logo h1 a span {
+    color: #5a88ca;
+}
+.logo img {
+    width: 300px;
+    height: 100px;
+}
+
+
+/*----------------
+  Mainmenu Area
+----------------*/
+
+.mainmenu-area ul.navbar-nav li a {
+    color: #6e6a6a;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #5a88ca; color: #000;}
+
+.mainmenu-area .nav > li > a:focus {color: #FFF;}
+
+
+
+/*--------------
+  Slider Area
+--------------*/
+
+.slider-area { width:80%; position:relative; margin:0 auto; padding:5px;}
+/*-------------------------
+[9. Block slider]
+---------------------------*/
+.block-slider{
+    border:none;
+    width: 100%;
+}
+.block-slider ul li{
+    list-style: none;
+}
+.block-slider .bx-pager{
+    display: none;
+}
+.block-slider .bx-prev,
+.block-slider .bx-next{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    line-height: 29px;
+    -moz-transition: all 0.45s ease;
+    -webkit-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    -ms-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+.block-slider img{
+    width: 100%;
+    height: auto;
+}
+.block-slider .bx-prev{
+    left: 0px;
+    padding-right: 3px;
+}
+.block-slider .bx-next{
+    right: 0px;
+    padding-left: 3px;
+}
+.block-slider:hover .bx-prev{
+    left: 10px;
+}
+.block-slider:hover .bx-next{
+    right: 10px;
+}
+.block-slider .bx-prev:hover,
+.block-slider .bx-next:hover{
+    background: #5a88ca;
+    color: #fff;
+    border-color: #5a88ca;
+}
+
+/*------------------
+[4. Slidershow]
+------------------*/
+
+.block-slider .bx-pager{
+    display: block;
+    text-align: center;
+}
+.block-slider .bx-pager-item{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    font-size: 0;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+.block-slider .bx-pager-item a{
+    width: 100%;
+    height: 100%;
+    background: #999;
+    display: block;
+    border-radius: 50%;
+}
+.block-slider .bx-pager-item a.active{
+    background: #1bd172;
+}
+.block-slider .caption-group{
+    position: absolute;
+    top: 26%;
+    right: 16%;
+}
+.block-slider .caption-group .title{
+    margin: 0;
+}
+.block-slider .caption-group .subtitle{
+    margin: 0;
+    margin-top: 5px;
+}
+.block-slider .caption-group .button-radius{
+    margin-top: 27px;
+}
+.block-slider .caption-group .primary{
+    color: #1bd172;
+}
+.block-slider .caption-group .caption{
+
+}
+
+
+/*-----------------
+   Single phone
+-----------------*/
+
+.product-title {
+    background-color: #808080;
+    box-shadow: 10px 10px 3px black;
+    font-family: Times New Roman;
+    border-radius: 20px;
+    height: 100px;
+}
+
+.product-title h3 {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.product-title h3 a {
+    color: #00ffff;
+}
+
+.product-title a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.image1 {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+}
+
+.image1 img {
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 100px;
+    height: 130px;
+}
+
+.product-list {
+    display: flex;
+}
+
+.product-list li {
+    display: inline-block;
+    margin: 30px 35px;
+}
+
+.product-list li a {
+    box-shadow: 10px 10px 8px #e6e6e6, -10px -10px 8px #e6e6e6;
+    border-radius: 10px;
+    display: block;
+    width: 200px;
+    height: 250px;
+}
+
+.product-list li a h5 {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+}
+
+.product-list li a:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+
+
+/*-----------------
+   Single phone
+-----------------*/
+
+.single-phone li{
+    display: block;
+}
+
+.phone-title{
+    font-size: 50px;
+}
+
+.big-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.small-img img{
+    width: 80px;
+    height: 80px;
+}
+
+li .zmdi{
+    color: #b3bdc5;
+    font-size: 28px;
+    position: absolute;
+    width: 30px;
+    text-align: center;
+    margin-left: -38px;
+    margin-top: 3px;
+}
+
+li .category{
+    display: block;
+    padding-left: 38px;
+    line-height: 20px;
+    float: none;
+    width: auto;
+    color: #3c9bcd;
+    font-weight: 400;
+}
+
+li .spec{
+    line-height: 20px;
+    display: block;
+    padding-left: 38px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 3px;
+}
+
+.a{
+    border: 1px solid red;
+}
+
+.full-width-element {
+    width: calc(100% - -80px);
+    margin-left: -40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.spec-title {
+    font-family: fantasy;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 14px;
+}
+
+
+/*------------------
+   Single laptop
+------------------*/
+
+.lp-spec {
+    margin-top: 5px;
+}
+
+.lp-img-container {
+    padding: 20px;
+}
+
+.lp-big-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.lp-small-img img {
+    margin-left: 2px;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.lp-img {
+    font-size: 28px;
+    margin-left: -5px;
+    position: absolute;
+    width: 30px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.lp-category{
+    display: block;
+    padding-left: 38px;
+    line-height: 16px;
+    float: none;
+    width: auto;
+    color: #3c9bcd;
+    font-weight: 400;
+}
+
+
+/*------------------
+   Specification
+------------------*/
+
+.img-con img{
+    padding: 0;
+    margin-left: -20px;
+    width: 130%;
+    height: 130%;
+}
+
+.specs-table {
+    border-bottom: 0;
+    margin-bottom: 100px;
+}
+
+.full-width-element-xs {
+    width: 100%;
+}
+
+.specs-table .media:nth-child(2n){
+    background: #e6e6e6;
+}
+
+.specs-table .media {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.specs-table .media-header {
+    display: table-header-group;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.specs-table .media-header .media-left {
+    display: block;
+    float: none;
+    vertical-align: top;
+    padding: 6px 10px;
+    width: 200px;
+}
+
+.specs-table .media .media-left h3 {
+    word-break: keep-all;
+    width: 180px;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.specs-table .media .media-body {
+    border-left: 0;
+    word-break: keep-all;
+    font-size: 13px;
+    display: table-cell;
+    float: none;
+    position: relative;
+    padding: 5px;
+    overflow: visible;
+    line-height: 2;
+    vertical-align: top;
+    width: 100%;
+}
+
+/*-------------
+    Service
+--------------*/
+
+.order-content {
+    padding: 20px 0 30px;
+}
+
+.order-content h4 {
+    margin-left: 100px;
+}
+
+.order-list {
+    display: flex;
+}
+
+.order-list li {
+    display: inline-block;
+    margin: 30px 50px;
+}
+
+.order-list li a {
+    box-shadow: 10px 10px 8px #e6e6e6, -10px -10px 8px #e6e6e6;
+    border-radius: 10px;
+    display: block;
+    width: 200px;
+    height: 250px;
+}
+
+.order-list li a h5 {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+}
+
+.order-list li a h6 {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+}
+
+.order-list li a:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.image {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+}
+
+.image img {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/*------------------
+   Single Service
+-------------------*/
+
+.title_img {
+    margin-left: 30px;
+}
+
+.title_img h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #888888;
+}
+
+.title_img img {
+    margin: 10px;
+    margin-left: 20%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px #e6e6e6;
+}
+
+.address {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.address h4 {
+    font-size: 25px;
+    color: #3399ff;
+}
+
+.address h6 {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.address h5 {
+    margin-left: 25px;
+    color: #ff3333;
+    text-decoration: underline;
+}
