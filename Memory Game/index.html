@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading"><span>Memory</span><span> Game</span></h2>
+        <div class="cards">
+            <div class="card" animal="cat">
+                <img src="./images/cat.png" alt="cat">
+            </div>
+            <div class="card" animal="dog">
+                <img src="./images/dog.png" alt="dog">
+            </div>
+            <div class="card" animal="snake">
+                <img src="./images/snake.png" alt="snake">
+            </div>
+            <div class="card" animal="lion">
+                <img src="./images/lion.png" alt="lion">
+            </div>
+            <div class="card" animal="tiger">
+                <img src="./images/tiger.png" alt="tiger">
+            </div>
+            <div class="card" animal="duck">
+                <img src="./images/duck.png" alt="duck">
+            </div>
+            <div class="card" animal="jaguar">
+                <img src="./images/jaguar.png" alt="jaguar">
+            </div>
+            <div class="card" animal="panther">
+                <img src="./images/panther.png" alt="panther">
+            </div>
+            <div class="card" animal="cat">
+                <img src="./images/cat.png" alt="cat">
+            </div>
+            <div class="card" animal="duck">
+                <img src="./images/duck.png" alt="duck">
+            </div>
+            <div class="card" animal="jaguar">
+                <img src="./images/jaguar.png" alt="jaguar">
+            </div>
+            <div class="card" animal="tiger">
+                <img src="./images/tiger.png" alt="tiger">
+            </div>
+            <div class="card" animal="snake">
+                <img src="./images/snake.png" alt="snake">
+            </div>
+            <div class="card" animal="panther">
+                <img src="./images/panther.png" alt="panther">
+            </div>
+            <div class="card" animal="lion">
+                <img src="./images/lion.png" alt="lion">
+            </div>
+            <div class="card" animal="dog">
+                <img src="./images/dog.png" alt="dog">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let counter = 0;
+        let firstSelection = "";
+        let secondSelection = "";
+        
+        const cards = document.querySelectorAll(".cards .card");
+        cards.forEach((card) => {
+            card.addEventListener("click", () => {
+                card.classList.add("clicked");
+
+                if(counter === 0) {
+                    firstSelection = card.getAttribute("animal");
+                    counter++;
+                } else {
+                    secondSelection = card.getAttribute("animal");
+                    counter = 0;
+
+                    if( firstSelection === secondSelection ) {
+                        const correctCards = document.querySelectorAll(
+                            ".card[animal='" + firstSelection + "']");
+
+                            correctCards[0].classList.add("checked");
+                            correctCards[0].classList.remove("clicked");
+                            correctCards[1].classList.add("checked");
+                            correctCards[1].classList.remove("clicked");
+                    } else {
+                        const incorrectCards = document.querySelectorAll(".card.clicked");
+
+                        incorrectCards[0].classList.add("shake");
+                        incorrectCards[1].classList.add("shake");
+
+                        setTimeout( () => {
+                            incorrectCards[0].classList.remove("shake");
+                            incorrectCards[0].classList.remove("clicked");
+                            incorrectCards[1].classList.remove("shake");
+                            incorrectCards[1].classList.remove("clicked");
+                        }, 800);
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+</html>
