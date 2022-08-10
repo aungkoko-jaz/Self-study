@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: consolas;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #111;
+}
+.scan{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.scan .fingerprint{
+	position: relative;
+	width: 300px;
+	height: 380px;
+	background: url(fingerprint-02.webp);
+	background-repeat: no-repeat;
+	background-size: 300px;
+}
+.scan .fingerprint::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(fingerprint-01.webp);
+	background-repeat: no-repeat;
+	background-size: 300px;
+	animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate{
+	0%,100%
+	{
+		height: 0%;
+	}
+	50%
+	{
+		height: 100%;
+	}
+}
+.scan .fingerprint::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 8px;
+	background: #aa00ff;
+	border-radius: 8px;
+	filter: drop-shadow(0 0 20px #aa00ff)  drop-shadow(0 0 60px #aa00ff);
+	animation: animate_line 4s ease-in-out infinite;
+}
+@keyframes animate_line{
+	0%,100%
+	{
+		top: 0%;
+	}
+	50%
+	{
+		top: 100%;
+	}
+}
+.scan h1{
+	color: #aa00ff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	filter: drop-shadow(0 0 20px #aa00ff)  drop-shadow(0 0 60px #aa00ff);
+	animation: animate_text 0.5s steps(1) infinite;
+}
+@keyframes animate_text{
+	0%,100%
+	{
+		opacity: 0;
+	}
+	50%
+	{
+		opacity: 1;
+	}
+}
