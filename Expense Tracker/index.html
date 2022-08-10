@@ -1,133 +1,72 @@
-:root {
-    --drop-shadow: 0 1px 4px 1px rgba(199,199,199);
-    --income-color: green;
-    --expense-color: red;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="app">
+        <h1>Expense Tracker</h1>
+        <div class="balance-container">
+            <h2>Your Balance</h2>
+            <div id="balance">$1000</div>
+        </div>
+        <div class="cashflow-container">
+            <div class="income-container">
+                <h2>Income</h2>
+                <div id="income">$1000</div>
+            </div>
+            <div class="expense-container">
+                <h2>Expense</h2>
+                <div id="expense">$500</div>
+            </div>
+        </div>    
+            <div class="transaction-container">
+                <h2>Transaction History</h2>
+                <!--<ul id="transaction-list">
+                    <li>Salary
+                        <div>
+                            <span class="income-amt">$5500</span>
+                            <button>X</button>
+                        </div>
+                    </li>
+                    <li>Buy Grocery
+                        <div>
+                            <span class="expense-amt">$500</span>
+                            <button>X</button>
+                        </div>
+                    </li>
+                    <li>Guitar
+                        <div>
+                            <span class="expense-amt">$1300</span>
+                            <button>X</button>
+                        </div>
+                    </li>
+                </ul>-->
+                <ul id="transaction-list">
 
-body {
-    font-family: 'Rubik', 'sans-serif';
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+                </ul>
+            </div>
 
-.app h1 {
-    text-align: center;
-}
+            <div class="form-container">
+                <h2>Add new transaction</h2>
+                <form onsubmit="return false;">
+                    <label for="name">Name</label>
+                    <input id="name" type="text">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number">
+                    <button type="submit" id="incomeBtn">Add Income</button>
+                    <button type="submit" id="expenseBtn">Add Expense</button>
+                </form>
+            </div>
+    </div>
 
-h2 {
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
+    <script type="text/javascript" src="main.js">
 
-.balance-container #balance {
-    font-size: 1.5em;
-}
-
-.cashflow-container {
-    display: flex;
-    box-shadow: var(--drop-shadow);
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin-top: 20px;
-}
-
-.income-container {
-    border-right: 1px solid #cccccc;
-    padding-right: 20px;
-}
-
-.expense-container {
-    padding-left: 20px;
-}
-
-#income, #expense {
-    font-size: 1.3em;
-}
-
-#income {
-    color: var(--income-color);
-}
-
-#expense {
-    color: var(--expense-color);
-}
-
-#transaction-list {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-}
-
-#transaction-list li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    box-shadow: var(--drop-shadow);
-    margin-bottom: 10px;
-}
-
-#transaction-list li span {
-    display: inline-block;
-    color: white;
-    padding: 5px;
-    border-radius: 3px;
-    margin-right: 5px;
-}
-
-#transaction-list li .income-amt {
-    background-color: var(--income-color);
-}
-
-#transaction-list li .expense-amt {
-    background-color: var(--expense-color);
-}
-
-#transaction-list li button {
-    padding: 5px 10px 5px 10px;
-}
-
-.form-container form{
-    display: flex;
-    flex-direction: column;
-}
-
-.form-container form label {
-    padding-bottom: 10px;
-}
-
-.form-container form input {
-    height: 25px;
-    margin-bottom: 10px;
-}
-
-.form-container form button {
-    border: none;
-    padding: 10px;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    color: white;
-}
-
-#incomeBtn {
-    background-color: var(--income-color);
-    cursor: pointer;
-}
-
-#incomeBtn:hover {
-    background-color: chartreuse;
-}
-
-#expenseBtn {
-    background-color: var(--expense-color);
-    cursor: pointer;
-}
-
-#expenseBtn:hover {
-    background-color: crimson;
-}
+    </script>
+</body>
+</html>
